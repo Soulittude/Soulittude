@@ -1,0 +1,46 @@
+name: Update "Currently Working On" Section
+
+on:
+  push:
+    branches:
+      - main  # Change if your default branch isn't `main`
+  schedule:
+    - cron: '0 * * * *'  # Run every hour (optional)
+
+jobs:
+  update-currently-working-on:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v3
+
+      - name: Get Latest Repository
+        run: |
+          latest_repo=$(gh repo list Soulittude --limit 1 --sort pushed | awk '{print $1}')
+          echo "LATEST_REPO=$latest_repo" >> $GITHUB_ENV
+
+      - name: Update README Section
+        run: |
+          # Define the start and end of the section
+          START_MARKER="<!-- START: Currently Working On -->"
+          END_MARKER="<!-- END: Currently Working On -->"
+          
+          # Extract the latest repository
+          REPO_LINK="[${LATEST_REPO}](https://github.com/${LATEST_REPO})"
+          
+          # Build the new section
+          NEW_SECTION="${START_MARKER}\n## Currently Working On: ${REPO_LINK}\n${END_MARKER}"
+          
+          # Replace the section between markers
+          sed -i "/${START_MARKER}/,/${END_MARKER}/c\\${NEW_SECTION}" README.md
+
+      - name: Commit and Push Changes
+        run: |
+          git config --global user.name "GitHub Actions Bot"
+          git config --global user.email "actions@github.com"
+          git add README.md
+          git commit -m "Update Currently Working On section"
+          git push
+        env:
+          GH_TOKEN: ${{ secrets.GH_TOKEN }}
