@@ -3,36 +3,40 @@ name: Update README with Last Pushed Repo
 on:
   push:
     branches:
-      - main  # Run this workflow on pushes to the main branch.
+      - main # Replace with your default branch
+  schedule:
+    - cron: '0 0 * * *' # Runs daily (optional, adjust as needed)
 
 jobs:
   update-readme:
     runs-on: ubuntu-latest
 
     steps:
-      # Step 1: Checkout the Repository
-      - name: Checkout Repository
+      # Check out the repository
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      # Step 2: Get Last Pushed Repository
-      - name: Get Last Pushed Repository
-        id: last-repo
+      # Get the most recently updated repository
+      - name: Fetch last pushed repository
+        id: fetch_repo
         run: |
-          LAST_REPO=$(curl -s -H "Authorization: token ${{ secrets.GH_TOKEN }}" \
-            https://api.github.com/users/${{ github.actor }}/events \
-            | jq -r 'map(select(.type == "PushEvent")) | .[0].repo.name')
-          echo "LAST_REPO=${LAST_REPO}" >> $GITHUB_ENV
+          LAST_REPO=$(curl -s \
+            -H "Authorization: Bearer ${{ secrets.PAT_TOKEN }}" \
+            -H "Accept: application/vnd.github+json" \
+            "https://api.github.com/user/repos?sort=pushed&per_page=1" | jq -r '.[0]')
+          echo "REPO_NAME=$(echo $LAST_REPO | jq -r '.name')" >> $GITHUB_ENV
+          echo "REPO_URL=$(echo $LAST_REPO | jq -r '.html_url')" >> $GITHUB_ENV
 
-      # Step 3: Update README.md
-      - name: Update README
+      # Update README.md
+      - name: Update README.md
         run: |
-          sed -i "s|## Currently Working On: \[.*\](.*)|## Currently Working On: [${{ env.LAST_REPO }}](https://github.com/${{ github.actor }}/${{ env.LAST_REPO }})|" README.md
+          sed -i "s|## Currently Working On:.*|## Currently Working On: [${REPO_NAME}](${REPO_URL})|" README.md
 
-      # Step 4: Commit and Push Changes
-      - name: Commit and Push Changes
+      # Commit and push changes
+      - name: Commit and push changes
         run: |
-          git config user.name "${{ github.actor }}"
-          git config user.email "${{ github.actor }}@users.noreply.github.com"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git add README.md
-          git commit -m "Update Currently Working On section"
+          git commit -m "Update README with last pushed repository"
           git push
