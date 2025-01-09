@@ -3,7 +3,7 @@ name: Update README with Last Pushed Repo
 on:
   push:
     branches:
-      - main # Replace with your default branch
+      - main # Replace with your default branch.
   schedule:
     - cron: '*/10 * * * *'
 
