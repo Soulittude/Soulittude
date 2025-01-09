@@ -42,4 +42,4 @@ I love to improve myself and learn new technologies. I enjoy diving into various
 
 ### 📊 GitHub Stats  
 ![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=Soulittude&layout=compact&theme=github_dark)  
-![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Soulittude.Soulittude&left_color=darkslategray&right_color=steelblue" )
+![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Soulittude.Soulittude&left_color=darkslategray&right_color=blue" )
