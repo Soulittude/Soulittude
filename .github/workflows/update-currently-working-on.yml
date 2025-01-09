@@ -5,7 +5,7 @@ on:
     branches:
       - main  # Change if your default branch isn't `main`
   schedule:
-    - cron: '0 * * * *'  # Run every hour (optional)
+    - cron: '*/10 * * * *'
 
 jobs:
   update-currently-working-on:
