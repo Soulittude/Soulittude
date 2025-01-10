@@ -5,7 +5,7 @@ on:
     branches:
       - main # Replace with your default branch.
   schedule:
-    - cron: '*/10 * * * *'
+    - cron: '0 * * * *'
 
 jobs:
   update-readme:
