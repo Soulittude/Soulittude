@@ -4,7 +4,7 @@
 I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology. Below is an overview of my work and expertise.
 
 ---
-## Currently Working On: [Horror Demo 3D](https://github.com/Soulittude/HorrorDemo3D)
+## Currently Working On: [Chess Demo](https://github.com/Soulittude/ChessDemo)
 ### 🌐 Web Development  
 ![React](https://img.shields.io/badge/-React-61DAFB?logo=react&logoColor=white)  ![Angular](https://img.shields.io/badge/-Angular-DD0031?logo=angular&logoColor=white) ![DotNetCore](https://img.shields.io/badge/-.NET_Core-512BD4?logo=dotnet&logoColor=white) ![Next.js](https://img.shields.io/badge/-Next.js-000000?logo=nextdotjs&logoColor=white) ![NestJS](https://img.shields.io/badge/-NestJS-E0234E?logo=nestjs&logoColor=white) ![TypeScript](https://img.shields.io/badge/-TypeScript-3178C6?logo=typescript&logoColor=white) ![Electron](https://img.shields.io/badge/-Electron-47848F?logo=electron&logoColor=white) ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white) ![Bootstrap](https://img.shields.io/badge/-Bootstrap-563D7C?logo=bootstrap&logoColor=white) ![Tailwind CSS](https://img.shields.io/badge/-TailwindCSS-38B2AC?logo=tailwindcss&logoColor=white) ![Material UI](https://img.shields.io/badge/-MaterialUI-0081CB?logo=mui&logoColor=white) ![HTML](https://img.shields.io/badge/-HTML5-E34F26?logo=html5&logoColor=white) ![CSS](https://img.shields.io/badge/-CSS3-1572B6?logo=css3&logoColor=white) ![i18n](https://img.shields.io/badge/-i18n-4192B4?logo=localization&logoColor=white)  
 - [Gamalol](https://github.com/Soulittude/gamalol)  
@@ -13,6 +13,7 @@ I love to improve myself and learn new technologies. I enjoy diving into various
 
 ### 🎮 Game Development  
 ![Unity](https://img.shields.io/badge/-Unity-000000?logo=unity&logoColor=white)  ![C#](https://img.shields.io/badge/-C%23-239120?logo=csharp&logoColor=white)  ![Android](https://img.shields.io/badge/-Android-3DDC84?logo=android&logoColor=white)  ![Firebase](https://img.shields.io/badge/-Firebase-FFCA28?logo=firebase&logoColor=white) 
+- [Chess Demo](https://github.com/Soulittude/ChessDemo)
 - [Horror Demo 3D](https://github.com/Soulittude/HorrorDemo3D)
 - [Tower Defense Demo](https://github.com/Soulittude/TowerDefenseDemo)
 - [Angry Birds Demo](https://github.com/Soulittude/AngryBirdsDemo)
