@@ -1,7 +1,7 @@
 # Soulittude  
 
 ### Welcome to my profile!  
-I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology. Below is an overview of my work and expertise.
+I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology.
 
 ---
 ## Currently Working On: [Walking Simulator 3D](https://github.com/Soulittude/Walking-Simulator-3D-Core)
