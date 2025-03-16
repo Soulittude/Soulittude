@@ -1,7 +1,7 @@
 # Soulittude  
 
 ### Welcome to my profile!  
-I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology..
+I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology...
 
 ---
 ## Currently Working On: [ToDoList App - Client](https://github.com/Soulittude/ToDoListAppClient)
