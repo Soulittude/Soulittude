@@ -51,6 +51,6 @@ I love to improve myself and learn new technologies. I enjoy diving into various
 - [Stok Otomasyon](https://github.com/Soulittude/StokOtomasyon)  
 
 ### 📊 GitHub Stats  
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=soulittude&layout=compact&size_weight=0.5&count_weight=0.5&theme=github_dark) 
+![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=soulittude&exclude_repo=AgalarBot,LearnKirill&layout=compact&size_weight=0.5&count_weight=0.5&theme=github_dark) 
 
 ![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Soulittude.Soulittude&left_text=Total%20Visitors)
