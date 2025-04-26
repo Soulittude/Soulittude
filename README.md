@@ -1,7 +1,7 @@
 # Soulittude  
 
 ### Welcome to my profile!  
-I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology!!!
+I love to improve myself and learn new technologies. I enjoy diving into various sectors and exploring the endless possibilities of programming and technology!
 
 ---
 ## Currently Working On: [E-Commerce - Frontend](https://github.com/Soulittude/e-commerce-frontend) | [E-Commerce Backend](https://github.com/Soulittude/e-commerce-backend)
