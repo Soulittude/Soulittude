@@ -56,6 +56,6 @@ I love to improve myself and learn new technologies. I enjoy diving into various
 - [Eye Guard](https://github.com/Soulittude/EyeGuard)  
 
 ### 📊 GitHub Stats  
-[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=soulittude&layout=compact&size_weight=0.5&count_weight=0.5&theme=github_dark&hide=ShaderLab,hlsl,HTML,CSS,C,C++,CMake)](#)
+[![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=soulittude&layout=compact&size_weight=0.5&count_weight=0.5&theme=github_dark&hide=ShaderLab,hlsl,CSS,C,C%2B%2B,CMake,Dockerfile,Batchfile)](#)
 
 [![Visitor Count](https://visitor-badge.laobi.icu/badge?page_id=Soulittude.Soulittude&left_text=Total%20Visitors)](#)
